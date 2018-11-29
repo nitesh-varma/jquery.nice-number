@@ -35,6 +35,7 @@
         && !currentInput.value
       ) {
         $currentInput.val(attrMin);
+        $currentInput.change();
       }
 
       // Generate container
@@ -57,6 +58,7 @@
               || attrMin < parseFloat(currentInput.value)
             ) {
               currentInput.value--;
+              $currentInput.change();
             }
           });
 
@@ -79,6 +81,7 @@
               || attrMax > parseFloat(currentInput.value)
             ) {
               currentInput.value++;
+              $currentInput.change();
             }
           });
 
